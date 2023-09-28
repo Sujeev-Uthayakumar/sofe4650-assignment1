@@ -2,10 +2,9 @@
     <string name="app_name">SOFE4650-Assignment 1</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Calculate your Mortgage</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">Mortgage Payment Calculator</string>
+    <string name="second_fragment_label">Calculate your Mortgage</string>
     <string name="calculator_description">Mortgage Calculator</string>
     <string name="next">Get Started</string>
-    <string name="previous">Previous</string>
-
+    <string name="previous">Calculate Payments</string>
 </resources>
