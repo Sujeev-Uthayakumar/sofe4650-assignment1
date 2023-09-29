@@ -1,5 +1,6 @@
 package com.sujeevuthayakumar.sofe4650_assignment1;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -34,8 +35,15 @@ public class SecondFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (!areInputsEmpty()) {
-                    NavHostFragment.findNavController(SecondFragment.this)
-                            .navigate(R.id.action_SecondFragment_to_thirdFragment);
+                    String principalAmount = binding.principalAmount.getText().toString();
+                    String interestRate = binding.interestRate.getText().toString();
+                    String amortizationPeriod = binding.amortizationPeriod.getText().toString();
+
+                    Intent intent = new Intent(getContext(), ResultActivity.class);
+                    intent.putExtra("principalAmount", Double.parseDouble(principalAmount));
+                    intent.putExtra("interestRate", Double.parseDouble(interestRate));
+                    intent.putExtra("amortizationPeriod", Double.parseDouble(amortizationPeriod));
+                    startActivity(intent);
                 }
                 styleErrorInputs();
             }
