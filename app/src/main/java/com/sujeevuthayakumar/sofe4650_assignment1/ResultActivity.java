@@ -1,6 +1,5 @@
 package com.sujeevuthayakumar.sofe4650_assignment1;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

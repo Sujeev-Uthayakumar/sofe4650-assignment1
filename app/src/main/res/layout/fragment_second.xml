@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:hint="Mortgage principal amount ($)"
+        android:hint="@string/mortgage_input_hint"
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
