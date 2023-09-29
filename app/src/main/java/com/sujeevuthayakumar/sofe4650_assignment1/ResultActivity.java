@@ -50,8 +50,7 @@ public class ResultActivity extends AppCompatActivity {
         double monthlyInterestRate = (interestRate / 12) / 100;
         double loanTenureMonths = amortizationPeriod * 12;
 
-        double emi = (principal * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loanTenureMonths))
+        return (principal * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loanTenureMonths))
                 / (Math.pow(1 + monthlyInterestRate, loanTenureMonths) - 1);
-        return emi;
     }
 }
