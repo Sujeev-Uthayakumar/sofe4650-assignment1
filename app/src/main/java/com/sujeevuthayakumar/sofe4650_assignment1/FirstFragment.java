@@ -15,6 +15,7 @@ public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
 
+    //
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -29,7 +30,9 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
+        // Set the on click listener for the get started button
+        binding.getStarted.setOnClickListener(new View.OnClickListener() {
+            // Uses the Nav Controller to go to the second fragment which asks for inputs
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(FirstFragment.this)
