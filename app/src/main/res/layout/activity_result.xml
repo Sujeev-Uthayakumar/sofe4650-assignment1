@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
+    <!--  Text for principal amount  -->
     <TextView
         android:id="@+id/principal_amount_text"
         android:layout_width="wrap_content"
@@ -18,6 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
+    <!--  Text for interest rate  -->
     <TextView
         android:id="@+id/interest_rate_text"
         android:layout_width="wrap_content"
@@ -30,6 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/principal_amount_text" />
 
+    <!--  Text for amortization period  -->
     <TextView
         android:id="@+id/amortization_period_text"
         android:layout_width="wrap_content"
@@ -42,6 +45,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/interest_rate_text" />
 
+    <!--  Text for the monthly payment  -->
     <TextView
         android:id="@+id/monthly_payment"
         android:layout_width="wrap_content"
@@ -55,6 +59,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!--  The toolbar for the ResultActivity  -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
@@ -66,6 +71,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!--  Text for the toolbar  -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -74,6 +80,7 @@
             android:textSize="20dp" />
     </androidx.appcompat.widget.Toolbar>
 
+    <!--  The back button  -->
     <Button
         android:id="@+id/back_button"
         android:layout_width="wrap_content"

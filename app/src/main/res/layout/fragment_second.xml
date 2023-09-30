@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SecondFragment">
 
+    <!--  InputLayout for principal amount  -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/principal_amount_layout"
         android:layout_width="match_parent"
@@ -14,6 +15,7 @@
         android:hint="@string/mortgage_input_hint"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!--  Input for principal amount  -->
         <EditText
             android:id="@+id/principal_amount"
             android:layout_width="match_parent"
@@ -21,6 +23,7 @@
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--  InputLayout for the interest rate  -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/interest_rate_layout"
         android:layout_width="match_parent"
@@ -28,6 +31,7 @@
         android:hint="Interest rate (%)"
         app:layout_constraintTop_toBottomOf="@+id/principal_amount_layout">
 
+        <!--  Input for the interest rate  -->
         <EditText
             android:id="@+id/interest_rate"
             android:layout_width="match_parent"
@@ -36,6 +40,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--  InputLayout for the amortization period  -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/amortization_period_layout"
         android:layout_width="match_parent"
@@ -43,6 +48,7 @@
         android:hint="Amortization period (years)"
         app:layout_constraintTop_toBottomOf="@+id/interest_rate_layout">
 
+        <!--  Input for the amortization period  -->
         <EditText
             android:id="@+id/amortization_period"
             android:layout_width="match_parent"
@@ -51,6 +57,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--  Locked input for mortage payment  -->
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="wrap_content"
@@ -68,6 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/amortization_period_layout"
         app:layout_constraintVertical_bias="0.5" />
 
+    <!--  Button to calculate the mortgage  -->
     <Button
         android:id="@+id/calculate_button"
         android:layout_width="wrap_content"
